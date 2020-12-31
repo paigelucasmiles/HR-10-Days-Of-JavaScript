@@ -13,14 +13,14 @@ function getArea(length, width) {
     let area;
     // Write your code here
     area = length * width;
-    console.log("area:", area);
+    console.log("rectangle area:", area);
 }
 
 function getPerimeter(length, width) {
     let perimeter;
     // Write your code here
     perimeter = (length + width) * 2
-    console.log("perimiter:", perimeter);
+    console.log("rectangle perimiter:", perimeter);
 }
 
 getArea(10, 2)
@@ -87,10 +87,10 @@ function main(r) {
     // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
     const PI = Math.PI
     // Print the area of the circle:
-    console.log(PI * (r * r))
+    console.log("circle area:", PI * (r * r))
 
     // Print the perimeter of the circle:
-    console.log(2 * PI * r)
+    console.log("circle perimeter:", 2 * PI * r)
 }
 
 main(2.6)
