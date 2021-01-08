@@ -21,4 +21,16 @@
 
 function getSecondLargest(nums) {
     // Complete the function
+    // const uniqueNums = new Set(nums)
+    // let uniqueNumsArray = []
+    // uniqueNumsArray = [...uniqueNums]
+    // const uniqueSortedNums = uniqueNumsArray.sort()
+    // console.log(uniqueSortedNums[uniqueSortedNums.length - 2])
+
+    const uniqueNums = Array.from(new Set(nums));
+    const reverseSorted = uniqueNums.sort((a, b) => {return b - a})
+    const second = reverseSorted[1]
+    console.log(second)
 }
+
+getSecondLargest([2, 7, 3, 7])
