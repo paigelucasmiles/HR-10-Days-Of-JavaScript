@@ -99,3 +99,4 @@ function isPositive(a){
         throw new Error('Negative Error');
     }
 };
+
