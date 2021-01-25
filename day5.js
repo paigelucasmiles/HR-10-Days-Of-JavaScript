@@ -34,3 +34,52 @@ class Square extends Rectangle {
 
 // let square1 = new Square(2)
 // console.log(square1.area())
+
+// Day 5: Template Literals
+
+// Objective
+// In this challenge, we practice using JavaScript Template Literals. Check the attached tutorial for more details.
+
+// Task
+// The code in the editor has a tagged template literal that passes the area and perimeter of a rectangle to a tag function named sides. Recall that the first argument of a tag function is an array of string literals from the template, and the subsequent values are the template's respective expression values.
+
+
+
+
+
+
+
+
+// Day 5: Arrow Functions
+
+// Objective
+// In this challenge, we practice using arrow functions. Check the attached tutorial for more details.
+
+// Task
+// // Complete the function in the editor. It has one parameter: an array, nums. It must iterate through the array performing one of the following actions on each element:
+// If the element is even, multiply the element by 2.
+// If the element is odd, multiply the element by 3.
+// The function must then return the modified array.
+
+// Input Format
+// The first line contains an integer, n, denoting the size of nums.
+// The second line contains n space-separated integers describing the respective elements of nums.
+
+// Output Format
+// Return the modified array where every even element is doubled and every odd element is tripled.
+
+let nums = [1, 2, 3, 4, 5]
+
+function modifyArray(nums){
+    let modifiedArray = []
+    nums.map(num => {
+        if(num % 2 === 0) {
+            modifiedArray.push(num * 2)
+        } else {
+            modifiedArray.push(num * 3)
+        }
+    })
+    return modifiedArray
+}
+
+modifyArray(nums)
