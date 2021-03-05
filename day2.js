@@ -136,4 +136,24 @@ function vowelsAndConsonants(s) {
     console.log(vowelsFromString.join('\n') + '\n' + consontantsFromString.join('\n'))
 }
 
+// function vowelsAndConsonants(s) {
+//     const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+//     const stringAsArray = s.split("");
+
+//     let vowelsFromString = []
+
+//     let consontantsFromString = []
+
+//     for(let i = 0; i < stringAsArray.length; i++){
+//         if(vowels.includes(stringAsArray[i])) {
+//             vowelsFromString.push(stringAsArray[i])
+//         } else {
+//             consontantsFromString.push(stringAsArray[i])
+//         }
+//     }
+//     console.log(vowelsFromString.join('\n') + '\n' + consontantsFromString.join('\n'))
+// }
+
+
 vowelsAndConsonants("javascript")
