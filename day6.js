@@ -23,3 +23,18 @@
 // Output Format
 // Return the maximum possible value of a&b < k for any a < b in sequence S.
 
+function getMaxLessThanK(n, k) {
+    let max = 0;
+
+    for(let i = 1; i <= n; i++){
+        for(let j = i; j <= n; j++){
+            console.log(i, j, ":", i & j)
+            if((i & j) < k && (i & j) > max && i != j ) {
+                max = i & j;
+            }
+        }
+    }
+    console.log(max)
+}
+
+getMaxLessThanK(2, 2)

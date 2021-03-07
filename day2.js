@@ -40,8 +40,6 @@ function getGrade(score) {
     console.log(grade);
 }
 
-
-
 // Day 2: Conditional Statements: Switch
 
 // Objective
@@ -124,36 +122,35 @@ function getLetter(s) {
 // Output Format
 // First, print each vowel in s on a new line (in the same order as they appeared in s). Second, print each consonant (i.e., non-vowel) in s on a new line (in the same order as they appeared in s).
 
-function vowelsAndConsonants(s) {
-    const vowels = ['a', 'e', 'i', 'o', 'u'];
-    
-    const stringAsArray = s.split("");
-
-    const vowelsFromString = stringAsArray.filter( element => vowels.includes(element));
-
-    const consontantsFromString = stringAsArray.filter( element => !vowels.includes(element));
-
-    console.log(vowelsFromString.join('\n') + '\n' + consontantsFromString.join('\n'))
-}
-
 // function vowelsAndConsonants(s) {
 //     const vowels = ['a', 'e', 'i', 'o', 'u'];
-
+    
 //     const stringAsArray = s.split("");
 
-//     let vowelsFromString = []
+//     const vowelsFromString = stringAsArray.filter( element => vowels.includes(element));
 
-//     let consontantsFromString = []
+//     const consontantsFromString = stringAsArray.filter( element => !vowels.includes(element));
 
-//     for(let i = 0; i < stringAsArray.length; i++){
-//         if(vowels.includes(stringAsArray[i])) {
-//             vowelsFromString.push(stringAsArray[i])
-//         } else {
-//             consontantsFromString.push(stringAsArray[i])
-//         }
-//     }
 //     console.log(vowelsFromString.join('\n') + '\n' + consontantsFromString.join('\n'))
 // }
 
+function vowelsAndConsonants(s) {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+    const stringAsArray = s.split("");
+
+    let vowelsFromString = []
+
+    let consontantsFromString = []
+
+    for(let i = 0; i < stringAsArray.length; i++){
+        if(vowels.includes(stringAsArray[i])) {
+            vowelsFromString.push(stringAsArray[i])
+        } else {
+            consontantsFromString.push(stringAsArray[i])
+        }
+    }
+    console.log(vowelsFromString.join('\n') + '\n' + consontantsFromString.join('\n'))
+}
 
 vowelsAndConsonants("javascript")
